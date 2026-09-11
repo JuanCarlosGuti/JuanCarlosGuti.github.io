@@ -35,6 +35,7 @@ body{
 a{color:var(--ink); text-decoration:none; border-bottom:1px solid var(--rule)}
 a:hover{border-bottom-color:var(--gold); color:var(--gold)}
 code,.mono{font-family:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace}
+.ipa{font-family:"Charis SIL","Gentium Plus","DejaVu Serif","Noto Serif","Liberation Serif",Times,serif}
 
 /* ---- header ---- */
 header{padding-block:64px 34px; border-bottom:1px solid var(--rule)}
@@ -155,7 +156,7 @@ footer a{color:var(--muted)}
 
   <article class="proj">
     <h3><a href="https://corpus-damana.onrender.com">Corpus Damana</a></h3>
-    <p class="tagline">A study app for dʉmʉna, the language of the Wiwa people — deployed and usable right now.</p>
+    <p class="tagline">A study app for <span class="ipa">dʉmʉna</span>, the language of the Wiwa people — deployed and usable right now.</p>
     <p>Concordances, a frequency dictionary, spaced-repetition flashcards and a translator grounded in the corpus rather than in the model's imagination: an LLM answers only from what the corpus actually attests, which matters for a language where invented output would be worse than none. NestJS + Angular workspaces, corpus imported from CSV into a local store, deployed on Render.</p>
     <ul class="stack"><li>NestJS</li><li>Angular</li><li>TypeScript</li><li>Node 22</li><li>LLM integration</li><li>Render</li></ul>
     <p class="links"><a href="https://corpus-damana.onrender.com">Live site →</a> <a href="https://github.com/JuanCarlosGuti/traductorDumuna">Source →</a></p>
