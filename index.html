@@ -154,11 +154,28 @@ footer a{color:var(--muted)}
   </article>
 
   <article class="proj">
-    <h3><a href="https://github.com/JuanCarlosGuti/digital_booking">digital_booking</a></h3>
-    <p class="tagline">Six Java 25 / Spring Boot 4 microservices for an accommodation platform.</p>
-    <p>A booking platform for the Cesar and La Guajira departments of Colombia — houses, apartments, cabins and fincas. Six independently deployable services over MySQL with a React frontend, containerized. The same product also exists as a single-process NestJS + Angular monolith in a separate repository, which makes the pair useful for comparing the two architectures on identical requirements rather than in the abstract.</p>
-    <ul class="stack"><li>Java 25</li><li>Spring Boot 4</li><li>Microservices</li><li>MySQL</li><li>React</li><li>Docker</li></ul>
-    <p class="links"><a href="https://github.com/JuanCarlosGuti/digital_booking">Source →</a> <a href="https://github.com/JuanCarlosGuti/cesar-travel">NestJS monolith →</a></p>
+    <h3><a href="https://corpus-damana.onrender.com">Corpus Damana</a></h3>
+    <p class="tagline">A study app for dʉmʉna, the language of the Wiwa people — deployed and usable right now.</p>
+    <p>Concordances, a frequency dictionary, spaced-repetition flashcards and a translator grounded in the corpus rather than in the model's imagination: an LLM answers only from what the corpus actually attests, which matters for a language where invented output would be worse than none. NestJS + Angular workspaces, corpus imported from CSV into a local store, deployed on Render.</p>
+    <ul class="stack"><li>NestJS</li><li>Angular</li><li>TypeScript</li><li>Node 22</li><li>LLM integration</li><li>Render</li></ul>
+    <p class="links"><a href="https://corpus-damana.onrender.com">Live site →</a> <a href="https://github.com/JuanCarlosGuti/traductorDumuna">Source →</a></p>
+    <p style="font-size:15px;color:var(--muted);margin:10px 0 0">Hosted on Render's free tier — after ~15 minutes idle the first request takes 30–60 s to wake the service.</p>
+  </article>
+
+  <article class="proj">
+    <h3><a href="https://github.com/JuanCarlosGuti/dian-ubl">dian-ubl</a></h3>
+    <p class="tagline">Colombian electronic invoicing, with no floating point anywhere near money.</p>
+    <p>A Rust library and CLI that builds and validates electronic invoices in the UBL 2.1 profile DIAN requires: a typed domain model, exact integer-scaled monetary arithmetic, the DIAN NIT check-digit algorithm, CUFE computation over SHA-384, and deterministic UBL serialization. The validator reports <em>every</em> problem it finds, each anchored to a field path, instead of stopping at the first — because an invoice rejected four times for four different reasons is four round trips with the tax authority. v1 is implemented, with input fixtures and normative golden files; XAdES signing and web-service submission are explicitly out of scope.</p>
+    <ul class="stack"><li>Rust</li><li>UBL 2.1</li><li>SHA-384</li><li>CLI</li><li>Golden-file testing</li></ul>
+    <p class="links"><a href="https://github.com/JuanCarlosGuti/dian-ubl">Source →</a></p>
+  </article>
+
+  <article class="proj">
+    <h3><a href="https://github.com/JuanCarlosGuti/crearcode-cesar-web">crearcode-cesar-web</a></h3>
+    <p class="tagline">A working product on the current generation of both stacks.</p>
+    <p>Full-stack monorepo for the corporate site and lead platform of Crear Code Cesar S.A.S. — Spring Boot 4.1 on Java 25 behind Angular 22 with server-side rendering, deployed as two containerized services. Lead capture, customer accounts with email verification, and the rest of what a real site needs rather than a demo.</p>
+    <ul class="stack"><li>Java 25</li><li>Spring Boot 4.1</li><li>Angular 22</li><li>SSR</li><li>Monorepo</li><li>Docker</li></ul>
+    <p class="links"><a href="https://github.com/JuanCarlosGuti/crearcode-cesar-web">Source →</a></p>
   </article>
 
   <article class="proj">
@@ -170,6 +187,14 @@ footer a{color:var(--muted)}
   </article>
 
   <article class="proj">
+    <h3><a href="https://github.com/JuanCarlosGuti/digital_booking">digital_booking</a></h3>
+    <p class="tagline">Six Java 25 / Spring Boot 4 microservices for an accommodation platform.</p>
+    <p>A booking platform for the Cesar and La Guajira departments of Colombia — houses, apartments, cabins and fincas. Six independently deployable services over MySQL with a React frontend, containerized. The same product also exists as a single-process NestJS + Angular monolith in a separate repository, which makes the pair useful for comparing the two architectures on identical requirements rather than in the abstract.</p>
+    <ul class="stack"><li>Java 25</li><li>Spring Boot 4</li><li>Microservices</li><li>MySQL</li><li>React</li><li>Docker</li></ul>
+    <p class="links"><a href="https://github.com/JuanCarlosGuti/digital_booking">Source →</a> <a href="https://github.com/JuanCarlosGuti/cesar-travel">NestJS monolith →</a></p>
+  </article>
+
+  <article class="proj">
     <h3><a href="https://github.com/JuanCarlosGuti/pasarela-Cripto">pasarela-Cripto</a></h3>
     <p class="tagline">Merchants charge in crypto and receive Colombian pesos.</p>
     <p>A payment gateway that lets merchants in Colombia accept cryptocurrency and settle in COP, without ever touching crypto or carrying the volatility themselves. Java backend with CI on GitHub Actions, plus a separate TypeScript frontend. In active development.</p>
@@ -177,24 +202,11 @@ footer a{color:var(--muted)}
     <p class="links"><a href="https://github.com/JuanCarlosGuti/pasarela-Cripto">Source →</a> <a href="https://github.com/JuanCarlosGuti/pasarela-front">Frontend →</a></p>
   </article>
 
-  <article class="proj">
-    <h3><a href="https://github.com/JuanCarlosGuti/crearcode-cesar-web">crearcode-cesar-web</a></h3>
-    <p class="tagline">A working product on the current generation of both stacks.</p>
-    <p>Full-stack monorepo for the corporate site and lead platform of Crear Code Cesar S.A.S. — Spring Boot 4.1 on Java 25 behind Angular 22 with server-side rendering, deployed as two containerized services. Lead capture, customer accounts with email verification, and the rest of what a real site needs rather than a demo.</p>
-    <ul class="stack"><li>Java 25</li><li>Spring Boot 4.1</li><li>Angular 22</li><li>SSR</li><li>Monorepo</li><li>Docker</li></ul>
-    <p class="links"><a href="https://github.com/JuanCarlosGuti/crearcode-cesar-web">Source →</a></p>
-  </article>
-
 </section>
 
 <section>
   <h2>Libraries &amp; tools</h2>
   <ul class="more">
-    <li>
-      <span class="name"><a href="https://github.com/JuanCarlosGuti/dian-ubl">dian-ubl</a></span>
-      <span class="desc">Builds and validates Colombian electronic invoices in the UBL 2.1 profile DIAN requires. Typed domain model, exact integer-scaled money arithmetic with no floating point anywhere near a peso, the DIAN NIT check-digit algorithm and CUFE computation.</span>
-      <span class="lang">Rust</span>
-    </li>
     <li>
       <span class="name"><a href="https://github.com/JuanCarlosGuti/httpproblem">httpproblem</a></span>
       <span class="desc">Zero-dependency implementation of RFC 9457, <em>Problem Details for HTTP APIs</em>. Extension members serialize at the JSON root exactly as the RFC requires, with constructors for the common status codes and a registry.</span>
@@ -204,11 +216,6 @@ footer a{color:var(--muted)}
       <span class="name"><a href="https://github.com/JuanCarlosGuti/bug-arena">bug-arena</a></span>
       <span class="desc">Authors reproducible <em>bug tasks</em>: a code snapshot with a seeded defect, a test that fails because of it, and a reference patch. Running the tests is pytest's job; bug-arena's job is rejecting tasks that prove nothing — starting with ones whose test already passes before the patch.</span>
       <span class="lang">Python</span>
-    </li>
-    <li>
-      <span class="name"><a href="https://github.com/JuanCarlosGuti/traductorDumuna">Corpus Damana</a></span>
-      <span class="desc">Study app for dʉmʉna, the language of the Wiwa people of the Sierra Nevada de Santa Marta: concordances, a frequency dictionary, spaced-repetition flashcards and corpus search.</span>
-      <span class="lang">TypeScript</span>
     </li>
   </ul>
 </section>
